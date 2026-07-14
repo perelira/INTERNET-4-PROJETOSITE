@@ -1,0 +1,149 @@
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.5px;
+    color: #212529;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+.card-stat-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.btn-outline-purple {
+    background-color: transparent;
+}
+
+.btn-outline-purple:hover {
+    color: #fff;
+    background-color: #6f42c1;
+}
+
+.custom-carousel-img {
+    max-height: 70px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+}
+
+.footer-brand-logo {
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    width: auto;
+    display: block;
+}
+
+.footer-brand-logo:hover {
+    opacity: 1;
+}
+
+.main-header {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-lattes {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.logo-cnpq {
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .logo-lattes {
+        height: 55px;
+    }
+
+    .logo-cnpq {
+        height: 35px;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .nav-container {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+        z-index: 999;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    header .d-flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .nav-container ul {
+        padding-left: 0;
+        gap: 10px;
+    }
+
+    .nav-container .nav-link {
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .navbar-toggle-input:checked ~ .nav-container {
+        display: block;
+    }
+
+    .navbar-toggle-input:checked ~ #hamburger-btn i::before {
+        content: "\f62a";
+    }
+}
+     .documento-oficial {
+            font-family: 'Times New Roman', Times, serif;
+            color: #212529;
+}
+     .ementa {
+        max-width: 450px;
+        margin-left: auto;
+        text-align: justify;
+        font-size: 0.95rem;
+        line-height: 1.5;
+}
+    .artigo, .item-documento {
+        text-align: justify;
+        text-indent: 2.5rem;
+        margin-bottom: 0.75rem;
+}
+    .subitem-documento {
+        text-align: justify;
+        padding-left: 3rem;
+        margin-bottom: 0.5rem;
+}

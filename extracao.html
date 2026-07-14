@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extração Lattes</title>
+    
+    <link rel="icon" type="image/x-icon" href="https://www.gov.br/observatorio/pt-br/assuntos/programas-academicos/imagens/Lattes.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-light">
+
+    <header class="p-3 mb-0 border-bottom bg-white sticky-top shadow-sm main-header">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between position-relative">
+
+            <div class="d-flex align-items-center gap-2 gap-sm-3 me-lg-4 logo-block" style="flex-shrink: 0;">
+                <a href="index.html" class="text-decoration-none">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_MhqGaKY8HUMz-9HJPOaiHBlv22FUl1Mtm6AiW-93A&s=10" alt="Logo Plataforma Lattes" class="logo-lattes">
+                </a>
+                
+                <a href="index.html" class="text-decoration-none">
+                    <img src="https://www.gov.br/cnpq/pt-br/canais_atendimento/identidade-visual/CNPq_v2017_rgb.png" alt="Logo CNPq" class="logo-cnpq">
+                </a>
+            </div>
+
+            <input type="checkbox" id="navbar-toggle" class="navbar-toggle-input d-none">
+            
+            <label id="hamburger-btn" for="navbar-toggle" class="btn btn-outline-secondary d-lg-none" aria-label="Abrir Menu">
+                <i class="bi bi-list fs-4"></i>
+            </label>
+
+            <nav class="nav-container col-12 col-lg-auto me-lg-auto mb-md-0">
+                <ul class="nav flex-column flex-lg-row text-center">
+                    <li><a href="index.html" class="nav-link px-2 link-body-emphasis fw-semibold fs-5">Início</a></li>
+                    <li><a href="sobre.html" class="nav-link px-2 link-body-emphasis fw-semibold fs-5">Sobre a Plataforma</a></li>
+                    <li><a href="instituicoes.html" class="nav-link px-2 link-body-emphasis fw-semibold fs-5">Instituições</a></li>
+                    <li><a href="pesquisa.html" class="nav-link px-2 link-body-emphasis fw-semibold fs-5">Dados e Estatísticas</a></li>
+                    <li><a href="extracao.html" class="nav-link px-2 link-primary fw-semibold fs-5">Extração de Dados</a></li>
+                    <li><a href="termos.html" class="nav-link px-2 link-body-emphasis fw-semibold fs-5">Termos de Uso</a></li>
+                    <li><a href="ajuda.html" class="nav-link px-2 link-body-emphasis fw-semibold fs-5">Ajuda</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8">
+                
+                <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border">
+                    
+                    <div class="text-center mb-4">
+                        <h1 class="display-6 fw-bold text-dark">Extração de Dados Lattes</h1>
+                    </div>
+                    <div class="text-center my-4">
+                        <img src="https://memoria.cnpq.br/image/image_gallery?uuid=8a1298f0-82d3-450b-8f84-b4f26e5e73d1&groupId=313759&t=1340806700218" alt="Ilustração de Extração de Dados Lattes" class="img-fluid rounded-3 shadow-sm border" style="max-height: 350px; width: 100%; object-fit: cover;">
+                    </div>
+
+                    <div class="text-secondary lh-lg mb-4" style="text-align: justify;">
+                        <p class="mb-4">
+                            O CNPq disponibiliza às instituições a possibilidade de extração de dados da Plataforma Lattes, tanto da base de Currículos Lattes como do Diretório dos Grupos de Pesquisa, por meio de uma ferramenta chamada Lattes Extrator. Para saber todos os procedimentos e ter acesso aos formulários para a instituição efetuar cadastro e solicitar acesso ao Lattes Extrator, o interessado deverá encaminhar pedido a <a href="mailto:atendimento@cnpq.br" class="text-primary fw-medium text-decoration-underline">atendimento@cnpq.br</a>.
+                        </p>
+
+                        <h2 class="h5 fw-bold text-dark mt-4 mb-3">Requisitos:</h2>
+                        <ul class="list-unstyled mb-5">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i> 1) Ser Instituição de Ensino e Pesquisa.
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i> 2) Possuir um IP dedicado.
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i> 3) Desenvolver solução tecnológica para integração com o Webservice do Lattes Extrator.
+                            </li>
+                        </ul>
+
+                        <h2 class="h4 fw-bold text-dark mt-4 mb-3">Número Identificador - ID dos Currículos Lattes</h2>
+                        <p class="mb-4">
+                            O CNPq disponibiliza também, periodicamente, todos os ID dos Currículos Lattes cadastrados. Para acessar o arquivo com os ID dos Currículos Lattes <a href="#" class="text-primary fw-bold text-decoration-underline">Clique aqui</a>.
+                        </p>
+
+                        <h2 class="h4 fw-bold text-dark mt-4 mb-3">Definições do XML do Extrator Lattes</h2>
+                        <p class="mb-0">
+                            <a href="#" class="text-primary fw-bold text-decoration-underline">Clique aqui</a> para acessar o documento XSD que contém as definições na linguagem XML Schema das informações originadas da extração de dados (atualizado em 12/09/2022).
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <section class="container my-4">
+    <div class="bg-white p-3 rounded-4 shadow-sm border">
+
+        <div id="lattesMemoryCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="10000">
+            
+            <div class="carousel-inner px-5">
+                
+                <div class="carousel-item active">
+                    <div class="row g-3 justify-content-center align-items-center">
+                        <div class="col-4 text-center">
+                            <img src="https://memoria.cnpq.br/image/journal/article?img_id=4673048&t=1723648964079" class="img-fluid custom-carousel-img" alt="Selo 1">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="https://memoria.cnpq.br/image/journal/article?img_id=4673040&t=1723648963984" class="img-fluid custom-carousel-img" alt="Selo 2">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="https://memoria.cnpq.br/image/journal/article?img_id=4673041&t=1723648964008" class="img-fluid custom-carousel-img" alt="Selo 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-3 justify-content-center align-items-center">
+                        <div class="col-4 text-center">
+                            <img src="https://memoria.cnpq.br/image/journal/article?img_id=4673042&t=1723648964019" class="img-fluid custom-carousel-img" alt="Selo 4">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="https://memoria.cnpq.br/image/journal/article?img_id=4673043&t=1723648964030" class="img-fluid custom-carousel-img" alt="Selo 5">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="https://memoria.cnpq.br/image/journal/article?img_id=4673044&t=1723648964038" class="img-fluid custom-carousel-img" alt="Selo 6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-3 justify-content-center align-items-center">
+                        <div class="col-4 text-center">
+                            <img src="https://memoria.cnpq.br/image/journal/article?img_id=4673045&t=1723648964046" class="img-fluid custom-carousel-img" alt="Selo 7">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="https://memoria.cnpq.br/image/journal/article?img_id=4673046&t=1723648964058" class="img-fluid custom-carousel-img" alt="Selo 8">
+                        </div>
+                        <div class="col-4 text-center">
+                            <img src="https://memoria.cnpq.br/image/journal/article?img_id=4673047&t=1723648964068" class="img-fluid custom-carousel-img" alt="Selo 9">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#lattesMemoryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#lattesMemoryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+    <footer class="text-white pt-5 pb-4 mt-5" style="background-color: #0b457f;">
+    <div class="container">
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-4">
+                <h5 class="small text-uppercase fw-bold pb-2 border-bottom border-white border-opacity-25 mb-3" style="letter-spacing: 1px;">Mapa do Portal</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="nav flex-column gap-2">
+                            <li><a href="index.html" class="link-light text-decoration-none small opacity-75 text-white">Início</a></li>
+                            <li><a href="sobre.html" class="link-light text-decoration-none small opacity-75 text-white">Sobre a Plataforma</a></li>
+                            <li><a href="termos.html" class="link-light text-decoration-none small opacity-75 text-white">Termos de Uso</a></li>
+                            <li><a href="ajuda.html" class="link-light text-decoration-none small opacity-75 text-white">Ajuda e Suporte</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="nav flex-column gap-2">
+                            <li><a href="pesquisa.html" class="link-light text-decoration-none small opacity-75 text-white">Dados e Estatísticas</a></li>
+                            <li><a href="instituicoes.html" class="link-light text-decoration-none small opacity-75 text-white">Acordos Institucionais</a></li>
+                            <li><a href="extracao.html" class="link-light text-decoration-none small opacity-75 text-white">Extração de Dados</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+          <div class="col-12 col-md-3">
+    <h5 class="small text-uppercase fw-bold pb-2 border-bottom border-white border-opacity-25 mb-3" style="letter-spacing: 1px;">Outros Sites</h5>
+    <div class="d-flex flex-wrap gap-3 align-items-center pt-0" style="min-height: 40px; margin-top: -8px;">
+        <a href="https://www.gov.br/capes/pt-br" target="_blank" title="CAPES"><img src="https://www.periodicos.capes.gov.br/images/Capes.png" alt="CAPES" class="footer-brand-logo" style="height: 18px !important; width: auto;"></a>
+        <a href="https://www.gov.br/aeb/pt-br" target="_blank" title="AEB"><img src="https://www.gov.br/aeb/en/media/logoaeb.png" alt="AEB" class="footer-brand-logo" style="height: 75px !important; width: auto;"></a>
+        <a href="https://www.gov.br/cnen/pt-br" target="_blank" title="CNEN"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Logotipo_da_CNEN_%282025%29.svg/1280px-Logotipo_da_CNEN_%282025%29.svg.png" alt="CNEN" class="footer-brand-logo" style="height: 24px !important; width: auto;"></a>
+        <a href="https://www.finep.gov.br/" target="_blank" title="FINEP"><img src="https://legacy.finep.gov.br/images/a-finep/marca-finep/2023/MARCA_RGB_2023.png" alt="FINEP" class="footer-brand-logo" style="height: 31px !important; width: auto;"></a>
+    </div>
+</div>
+            
+            <div class="col-12 col-md-5">
+                <h5 class="small text-uppercase fw-bold pb-2 border-bottom border-white border-opacity-25 mb-3" style="letter-spacing: 1px;">Central de Atendimento</h5>
+                
+                <div class="d-flex align-items-start mb-3 gap-2">
+                    <i class="bi bi-telephone fs-5 opacity-75 mt-1"></i>
+                    <div>
+                        <span class="d-block fw-bold fs-5">+55 61 3211 4000</span>
+                        <span class="small opacity-50 d-block">De segunda a sexta das 8:00 às 20:00h (horário de Brasília-DF)</span>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-start gap-2">
+                    <i class="bi bi-geo-alt fs-5 opacity-75 mt-1"></i>
+                    <div class="small opacity-75">
+                        <span class="d-block fw-semibold mb-1">Onde estamos:</span>
+                        Setor de Autarquias Sul Quadra 1 Bl. H, 13º andar<br>
+                        Edifício Telemundi II — Brasília, DF — CEP: 70.070-010
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center justify-content-start gap-4 mt-4 pt-2 border-top border-white border-opacity-10">
+                    <img src="https://memoria.cnpq.br/image/image_gallery?uuid=32ba17ec-9c6a-4119-88d6-d173c7c69c98&groupId=313759&t=1547733212990" alt="Logo Governo Federal" class="gov-unified-signature">
+                    <img src="https://memoria.cnpq.br/image/image_gallery?img_id=3239410&t=1675093870447" alt="Logo Ministério" class="gov-ministry-logo">
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-3 mt-4 border-top border-white border-opacity-10 text-center text-sm-start">
+            <p class="mb-0 small opacity-50">&copy; 2026 CNPq | Uma agência do Ministério da Ciência, Tecnologia e Inovação.</p>
+            <a href="#" class="btn btn-sm btn-outline-light opacity-50 hover-opacity-100 rounded-pill px-3 mt-2 mt-sm-0" style="font-size: 0.75rem;">
+                <i class="bi bi-arrow-up-short"></i> Voltar ao topo
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
