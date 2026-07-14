@@ -3,9 +3,13 @@ GRUPO: LUCAS CASSIANO, MALONNY PEREIRA E RAFAEL MARCEL
 
 SITE ESCOLHIDO: PLATAFORMA LATTES
 
-O site recebeu uma nova interface baseada no framework Bootstrap 5, preservando sua funcionalidade e sua característica mais institucional e científica, mas modernizando sua aparência e melhorando a experiência do usuário.
+O site recebeu uma nova interface baseada no framework Bootstrap 5, preservando sua funcionalidade e sua característica institucional e científica, mas modernizando sua aparência e melhorando a experiência do usuário. O objetivo do redesign foi tornar a Plataforma Lattes mais intuitiva, organizada e responsiva, sem alterar as funcionalidades já conhecidas pelos usuários. Para isso, foram utilizados Bootstrap 5, HTML semântico e a abordagem Mobile First, garantindo um layout mais consistente e adaptado para diferentes dispositivos.
 
-O objetivo deste redesign foi modernizar a Plataforma Lattes, deixando o sistema mais intuitivo e organizado sem mexer nas funcionalidades que o usuário já conhece. Trocamos o visual antigo por uma interface limpa, usando o Bootstrap 5 e HTML semântico para garantir um padrão profissional e consistente. Além disso, o projeto agora é totalmente responsivo (Mobile-First). Com o uso de cards e uma nova barra de navegação, conseguimos organizar melhor as informações, facilitando o uso em qualquer dispositivo e tornando a experiência do usuário bem mais fluida.
+A página inicial foi reorganizada para destacar as principais funcionalidades da plataforma, como buscar, atualizar e cadastrar currículos, priorizando aquilo que o usuário procura logo ao acessar o site. O layout original apresentava um visual mais antigo e uma distribuição de elementos que não valorizava essas ações. Com a reorganização dos componentes, foi criada uma hierarquia visual mais clara, facilitando a navegação e tornando a interface mais objetiva.
+
+Nas demais páginas, foram preservados os conteúdos e a identidade visual da plataforma, mas com melhorias na organização das informações, na legibilidade dos textos e na estrutura de navegação. O cabeçalho e o rodapé foram remodelados para oferecer uma experiência mais consistente, mantendo os links e informações institucionais, enquanto páginas como Dados e Estatísticas receberam elementos visuais mais modernos e organizados, facilitando a identificação das informações pelos usuários.
+
+Por se tratar de uma plataforma institucional e científica, a proposta não foi transformar completamente sua identidade, mas atualizá-la de forma equilibrada. Assim, foram preservadas as características que fazem parte da Plataforma Lattes, ao mesmo tempo em que foram aplicadas melhorias na organização, na hierarquia visual e na usabilidade. O resultado é uma interface mais atual, agradável e intuitiva, sem perder a seriedade e a credibilidade que caracterizam a plataforma.
 
 PRINTS DO SITE OFICIAL DA PLATAFORMA LATTES:
 
